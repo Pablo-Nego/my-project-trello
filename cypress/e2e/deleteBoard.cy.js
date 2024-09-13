@@ -2,8 +2,8 @@ describe('Deve excluir um board existente', () => {
   it('Deve excluir um board existente', () => {
       cy.fixture('boardId.json').then((data) => {
           const boardId = data.boardId; // Obtém o boardId do arquivo fixture
-          const apiKey = '6a739412aeec973a670955ca88cbdc40';
-          const apiToken = 'ATTA0a91e2907e04f1223880e8f1590cc9211b584ee9f20ed7a7bc55a5a2fa508609E734982B';
+          const apiKey = 'apiKey';
+          const apiToken = 'apiToken';
 
           // Verifique se o board existe
           cy.request({

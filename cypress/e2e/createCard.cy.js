@@ -3,8 +3,8 @@ describe('Criar um card no Trello via API', () => {
       cy.fixture('boardId.json').then(({ boardId }) => {
           const listName = 'To Do'; // Nome da lista do card
           const cardName = 'Meu Novo Card'; // Nome do card a ser criado
-          const apiKey = '6a739412aeec973a670955ca88cbdc40';
-          const apiToken = 'ATTA0a91e2907e04f1223880e8f1590cc9211b584ee9f20ed7a7bc55a5a2fa508609E734982B'; // Substitua pelo token correto
+          const apiKey = 'apiKey';
+          const apiToken = 'apiToken'; // Substitua pelo token correto
 
           // Passo 1: Buscar a lista de um board pelo nome
           cy.request({
